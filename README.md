@@ -49,6 +49,19 @@ End
 -> User registration and login system
 -> Store user data and preferences
 
+   ScreenShots
+-----------------
+Home page
+<img width="1897" height="905" alt="Screenshot 2026-04-27 223835" src="https://github.com/user-attachments/assets/d8ed5179-e8ce-4369-b0e4-e85857bce31b" />
+
+Playlist
+<img width="1913" height="911" alt="Screenshot 2026-04-27 223918" src="https://github.com/user-attachments/assets/c0a25d55-d0ee-4d5b-bbfd-9e25a11ebd20" />
+
+Song
+<img width="1895" height="906" alt="Screenshot 2026-04-27 223956" src="https://github.com/user-attachments/assets/007d210e-ece0-43cc-8197-f487341a1455" />
+
+
+
   Future Enhancements
 ------------------------
 -> Add music recommendation system (AI-based)
