@@ -14,7 +14,7 @@
     .music-image
     {
         height: 530px;
-        width: 1100px;
+        width: 1120px;
     }
        .music-logo
         {
@@ -26,14 +26,34 @@
             width: 90px;
         }
     </style>
-<body bgcolor="white">
+<body onload="a()" bgcolor="white">
    
      <Center>
-    <img src="music-banner.jpg" class="music-banner" alt="banner">
+    <img src="/images/music-banner.jpg" class="music-banner" alt="banner">
     
     </Center>
-    <img src="music-logo.png" class="music-logo" alt="logo">
+    <img src="/images/music-logo.png" class="music-logo" alt="logo">
      <hr>
-<img src="music-image.avif" class="music-image" alt="image">
+     <script>
+var img = ["/images/music-image.avif",
+               "/images/music-img1.jpg",
+               "/images/music-img2.jpg",
+               "/images/music-img3.jpg",
+               "/images/music-img4.jpg"]; 
+
+var i = 0;
+                                               
+function a()
+{
+document.getElementById("slider").src = img[i];
+i++;
+if(i>=img.length){
+    i=0;
+}
+} 
+setInterval(a,2000) //call fun 'a' after every 1000ms
+</script>
+<img src="/images/music-image.avif" id="slider" class="music-image" alt="image">
+
 </body>
 </html>
