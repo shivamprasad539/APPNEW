@@ -25,6 +25,18 @@
             height: 80px;
             width: 90px;
         }
+        .slider-box{
+            position: relative;
+            width: 1120px;
+            margin:auto;
+        }
+
+.radio-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
     </style>
 <body onload="a()" bgcolor="white">
    
@@ -34,6 +46,20 @@
     </Center>
     <img src="/images/music-logo.png" class="music-logo" alt="logo">
      <hr>
+     <div class="slider-box">
+    
+    <img src="/images/music-image.avif" id="slider" class="music-image">
+
+    <div class="radio-btn">
+        <input type="radio" name="r" onclick="change(0)" checked>
+        <input type="radio" name="r" onclick="change(1)">
+        <input type="radio" name="r" onclick="change(2)">
+        <input type="radio" name="r" onclick="change(3)">
+        <input type="radio" name="r" onclick="change(4)">
+    </div>
+
+</div>
+
      <script>
 var img = ["/images/music-image.avif",
                "/images/music-img1.jpg",
@@ -46,14 +72,18 @@ var i = 0;
 function a()
 {
 document.getElementById("slider").src = img[i];
+document.getElementsByName("r")[i].checked=true;
 i++;
 if(i>=img.length){
     i=0;
 }
 } 
+function change(index) {
+    i = index;
+    document.getElementById("slider").src = img[i];
+}
 setInterval(a,2000) //call fun 'a' after every 1000ms
 </script>
-<img src="/images/music-image.avif" id="slider" class="music-image" alt="image">
 
 </body>
 </html>
